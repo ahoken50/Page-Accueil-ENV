@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from '../assets/logo-val-dor.png';
 
 export const Header: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
         {/* Logo composition */}
         <div className="flex items-center gap-2">
           <img
-            src="/src/assets/logo-val-dor.png"
+            src={logo}
             alt="Ville de Val-d'Or"
             className="h-16 w-auto object-contain"
           />
