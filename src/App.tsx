@@ -4,6 +4,7 @@ import { SpillIcon, BinIcon, SoilIcon, EyeIcon } from './components/Icons';
 import './App.css';
 
 import Footer from './components/Footer';
+import logo from './assets/logo-val-dor.png';
 
 const services = [
   {
@@ -32,20 +33,19 @@ const services = [
   }
 ];
 
+
+
+// ... existing imports ...
+
 function App() {
   return (
     <div className="app-container">
       <header>
         <div className="logo-container">
-          {/* Placeholder for city logo - replacing with text if image fails or for now */}
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             alt="Ville de Val-d'Or"
             className="city-logo"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              e.currentTarget.parentElement!.innerHTML = '<h1>Ville de Val-d\'Or</h1>';
-            }}
           />
         </div>
         <h1>Services Environnementaux</h1>
