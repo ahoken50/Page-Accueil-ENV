@@ -1,7 +1,9 @@
-import React from 'react';
+
 import ServiceCard from './components/ServiceCard';
 import { SpillIcon, BinIcon, SoilIcon, EyeIcon } from './components/Icons';
 import './App.css';
+
+import Footer from './components/Footer';
 
 const services = [
   {
@@ -37,7 +39,7 @@ function App() {
         <div className="logo-container">
           {/* Placeholder for city logo - replacing with text if image fails or for now */}
           <img
-            src="https://www.ville.valdor.qc.ca/assets/images/logo-valdor.png"
+            src="/src/assets/logo.png"
             alt="Ville de Val-d'Or"
             className="city-logo"
             onError={(e) => {
@@ -60,6 +62,7 @@ function App() {
           />
         ))}
       </main>
+      <Footer />
     </div>
   );
 }
