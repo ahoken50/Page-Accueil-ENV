@@ -37,16 +37,26 @@ header {
   margin-bottom: 4rem;
   animation: fadeInDown 1s ease-out;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
 }
 
 .logo-container {
-  position: absolute;
-  left: 2rem;
-  top: 2rem;
+  position: relative;
+  left: auto;
+  top: auto;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -70,11 +80,19 @@ header {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin: 0;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    text-align: right;
+  }
 }
 
 .services-grid {
